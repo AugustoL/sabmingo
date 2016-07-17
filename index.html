@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <title>SABMINGO</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body >
+    <div class="container-fluid">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 jumbotron">
+        <h1 class="text-center fontAwesome">SABMINGO</h1>
+        <div class="row">
+            <div class="col-xs-2">
+                <button class="btn btn-default pull-left" onclick="previousMonth()">Previous Month</button>
+            </div>
+            <div class="col-xs-8">
+                <h2 class="text-center"><span id="message"></span></h2>
+            </div>
+            <div class="col-xs-2">
+                <button class="btn btn-default pull-right" onclick="nextMonth()">Next Month</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center"><span id="month"></span> of <span id="year"></span></h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                             <tr>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th colspan="2"><strong>Sabmingo</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendar"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 text-center">
+                <h3><a href="https://www.facebook.com/Sabmingo-1141659109207814/"><span class="fa fa-facebook"></span> Facebook</a></h3>
+            </div>
+            <div class="col-xs-6 text-center">
+                <h3><a href="https://github.com/AugustoL/sabmingo-website"><span class="fa fa-github"></span> Github</a></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h5> Idea and Development of Augusto Lemble <a href="https://www.linkedin.com/in/augustolemble"><i class="fa fa-linkedin"></i></a></h5>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/boostrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
