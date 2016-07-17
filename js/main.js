@@ -139,7 +139,7 @@ function startCounter(time, text){
     var timestamp = new Date(0,0,0,time.split(':')[0],time.split(':')[1],time.split(':')[2]);
     setInterval(function () {
         timestamp = new Date(timestamp.getTime() + interval*1000);
-        duration = moment.duration(duration.asSeconds() + interval, 'seconds');
+        duration = moment.duration(duration.asSeconds() - interval, 'seconds');
         var message = "";
         if (duration.days() > 0)
             message += duration.days() + 'd:';
