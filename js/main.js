@@ -142,7 +142,7 @@ function startCounter(time, text){
         duration = moment.duration(duration.asSeconds() - interval, 'seconds');
         var message = "";
         if (duration.days() > 0)
-            message += duration.days() + 'd:';
+            message += duration.days()-1 + 'd:';
             $('#message').text( + duration.hours() + 'h:' + duration.minutes() + 'm:' + duration.seconds() + 's' + text);
         if (duration.hours() > 0)
             message += duration.hours() + 'h:';
