@@ -142,7 +142,7 @@ function startCounter(time, text){
         duration = moment.duration(duration.asSeconds() - interval, 'seconds');
         var message = "";
         if (duration.days() > 0)
-            message += duration.days()-1 + 'd:';
+            message += duration.days() + 'd:';
             $('#message').text( + duration.hours() + 'h:' + duration.minutes() + 'm:' + duration.seconds() + 's' + text);
         if (duration.hours() > 0)
             message += duration.hours() + 'h:';
@@ -171,28 +171,28 @@ switch(dayOfTheWeek){
         startCounter(s," time left of sabmingo");
     break;
     case 1:
-        var then = moment().add((5), 'days').format('DD/MM/YYYY')+" 24:00:00";
+        var then = moment().add((4), 'days').format('DD/MM/YYYY')+" 24:00:00";
         var ms = moment(then,"DD/MM/YYYY HH:mm:ss").diff(moment(now,"DD/MM/YYYY HH:mm:ss"));
         var d = moment.duration(ms);
         var s = Math.floor(d.asHours()) + moment.utc(ms).format(":mm:ss");
         startCounter(s," time to next sabmingo");
     break;
     case 2:
-        var then = moment().add((5), 'days').format('DD/MM/YYYY')+" 24:00:00";
+        var then = moment().add((3), 'days').format('DD/MM/YYYY')+" 24:00:00";
         var ms = moment(then,"DD/MM/YYYY HH:mm:ss").diff(moment(now,"DD/MM/YYYY HH:mm:ss"));
         var d = moment.duration(ms);
         var s = Math.floor(d.asHours()) + moment.utc(ms).format(":mm:ss");
         startCounter(s," time to next sabmingo");
     break;
     case 3:
-        var then = moment().add((5), 'days').format('DD/MM/YYYY')+" 24:00:00";
+        var then = moment().add((2), 'days').format('DD/MM/YYYY')+" 24:00:00";
         var ms = moment(then,"DD/MM/YYYY HH:mm:ss").diff(moment(now,"DD/MM/YYYY HH:mm:ss"));
         var d = moment.duration(ms);
         var s = Math.floor(d.asHours()) + moment.utc(ms).format(":mm:ss");
         startCounter(s," time to next sabmingo");
     break;
     case 4:
-        var then = moment().add((5), 'days').format('DD/MM/YYYY')+" 24:00:00";
+        var then = moment().add((1), 'days').format('DD/MM/YYYY')+" 24:00:00";
         var ms = moment(then,"DD/MM/YYYY HH:mm:ss").diff(moment(now,"DD/MM/YYYY HH:mm:ss"));
         var d = moment.duration(ms);
         var s = Math.floor(d.asHours()) + moment.utc(ms).format(":mm:ss");
